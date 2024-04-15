@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url("00.jpg");
+  color: white;
+}
+h2 {
+  text-align: center;
+
+}
+</style>
+</head>
+<title>calculate the co2 emission</title>
+<body>
+
+
+<h1>CO2 calculation</h1>
+<p><h2>Type a value in the kilometer field to convert the value to co2 emission:<h2></p>
+<p><h2>  <p style="color:Red;"><b>5L Petrol per 100km</b></p>
+    
+    <p style="color:DodgerBlue;"><b>Maruti Suzuki</b></p>
+    <p style="color:DodgerBlue;"><b>Honda</b></p>
+    <p style="color:DodgerBlue;"><b>Renault Nissan</b></p>
+    <p style="color:DodgerBlue;"><b>Ford</b></p>
+    <p style="color:DodgerBlue;"><b>Maruti Hyudai</b></p>
+    
+    
+<p><h2>
+  <label>kilometer</label>
+  <input id="inputkilometer" type="number" placeholder="kilometer" oninput="pollutionConverter(this.value)" onchange="pollutinConverter(this.value)">
+<p id="d2"></p>
+<button type="button" onclick="myFunction()">ok</button>
+</h2></p>
+
+   
+   </h2></p> 
+<p><h2>co2emission (g): <span id="grams"></span></h2></p>
+
+<p><h2>co2emission (ppm): <span id="ppm"></span></h2></p>
+<script>
+
+
+function pollutionConverter(valNum) {
+
+  document.getElementById("grams").innerHTML=valNum * 120 ;
+ 
+  document.getElementById("ppm").innerHTML=  document.getElementById("grams").innerHTML *1000 ; 
+var grams=document.getElementById("grams").innerHTML ;
+    
+ if( grams>=90000) {
+        document.write( "<b><h1>your co2 limit is crossed more than 70000g</h1></b>");
+             }
+}
+
+
+
+function myFunction() {
+ 
+  document.getElementById("d2").innerHTML = "Greenhouse gas emissions, such as carbon dioxide (CO2), which can trap additional heat from the sun in the earth’s atmosphere, causing the ‘greenhouse effect’ and climate change. CO2 is the main greenhouse gas produced by motor vehicles. In 2017, the average combined CO2 emissions for a new light vehicle sold in Australia was 182 grams per kilometre (g/km).";
+
+}
+
+</script>
+
+<form>
+ &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; 
+ &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; 
+ &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;<input type="submit" formaction= "c.html" value="Go to Home">
+
+
+</form>
+
+
+</body>
+</html>
