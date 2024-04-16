@@ -1,4 +1,4 @@
-                                          VEHICLE POLLUTION CALCULATOR
+                                                   VEHICLE POLLUTION CALCULATOR
                                           
  * The goal was to develop a tool that could estimate the environmental impact of various vehicles based on their emissions and fuel consumption. 
 The challenge was designing an accurate and user-friendly calculator that could handle different types of vehicles and fuel options.
